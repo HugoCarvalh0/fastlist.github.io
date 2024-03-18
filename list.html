@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="list.css">
+    <title>List Fast</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <img class="logo" src="logoListHome.png" alt="Logo Fast List" width="210px">
+
+        <form action="/search" method="get">
+            <input class="barra-pesquisa" type="text" name="q" placeholder="Pesquisar...">
+            <button class="nav-button" type="submit">Buscar</button>
+        </form>
+
+        <ul class="nav-list">
+            <li>
+                <a href="" class="word">Home</a>
+            </li>
+            <li>
+                <a href="" class="word">Histórico</a>
+            </li>
+            <li>
+                <a href="" class="word">Configuração</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="lists" id="main">
+        <div class="list-home">
+            <div class="titulo">
+                <h2 id="title">Título</h2>
+                <button class="editTitle" id="edit-Title" onclick="editTitle()">Editar</button>
+            </div>
+            <div class="barra-pequisa-home">
+                <div class="add-container">
+                    <input class="barra-list" type="text" id="input-box" placeholder="Itens...">
+                    <button class="list-button" onclick="addTask()">Adicionar</button>
+                </div>
+
+                <div class="search-container">
+                    <input class="barra-list" type="text" id="searchInput" placeholder="Pesquisar...">
+                    <button class="list-button" onclick="searchItem()">Pesquisar</button>
+                </div>
+            </div>
+
+            <ul class="itens-lista" id="container">
+            </ul>
+
+        </div>
+    </div>
+
+    <footer id="rodape">
+        <p><b>Developed by</b> Hugo de Melo Carvalho - Iago Carmo Guimarães - Lucas Barcelos Gomes</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
